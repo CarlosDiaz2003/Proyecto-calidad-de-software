@@ -1,0 +1,44 @@
+{
+  "dependencies": {
+    "-": "^0.0.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.9.2",
+    "dotenv": "^17.2.3"
+  },
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:ul": "npx playwright test --ui",
+    "test:example": "npx playwright test test/example.spec.ts",
+    "test:example:headed": "npx playwright test tests/example.spec.ts --headed",
+    "test:testenlace": "npx playwright test tests/verificar-enlace.spec.ts --project=firefox --headed",
+    "test:testlimitepag": "npx playwright test tests/limite-paginacion.spec.ts --project=firefox --headed",
+    "test:testregusuexist": "npx playwright test tests/registro-usuario-existente.spec.ts --project=firefox --headed",
+    "test:testregusu": "npx playwright test tests/registro-usuario.spec.ts --project=firefox --headed",
+    "test:testvotauto": "npx playwright test tests/votar-auto.spec.ts --project=firefox --headed",
+    "test:testvotcarro": "npx playwright test tests/votar-carro.spec.ts --project=firefox --headed",
+    "test:testvotsinlog": "npx playwright test tests/votar-sin-login.spec.ts --project=firefox --headed",
+    "test:testincrementovoto": "npx playwright test tests/comprobar-incremento-voto.spec.ts --project=firefox --headed",
+    "test:testeditar": "npx playwright test tests/editar-perfil.spec.ts --project=firefox --headed",
+    "test:testcomprobartexto": "npx playwright test tests/comprobar-texto-largo.spec.ts --project=firefox --headed",
+    "test:testcomprobarvoto": "npx playwright test tests/comprobar-voto-unico.spec.ts --project=firefox --headed",
+    "test:testexpandirimagen": "npx playwright test tests/expandir-imagen-carro.spec.ts --project=firefox --headed",
+    "test:testlimiteinferior": "npx playwright test tests/limite-inferior-paginacion.spec.ts --project=firefox --headed",
+
+    "test:testcomentariosinnombre": "npx playwright test tests/comentario-sin-nombre.spec.ts --project=firefox --headed",
+
+    "test:example:chrome": "npx playwright test tests/example.spec.ts --project=firefox"
+  },
+  "name": "pruebas_automatizadas-main",
+  "version": "1.0.0",
+  "description": "```bash npm run test ```",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
